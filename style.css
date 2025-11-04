@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000101;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+#portfolio{
+    
+    text-align: left;
+}
+
+/* === Navigation Bar === */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 50px;
+  background: transparent;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fca311;
+}
+
+/* === Intro Section === */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: -20px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  height: 500px;
+}
+
+.intro-text {
+  max-width: 400px;
+}
+
+.intro-text h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.intro-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* === Profile Image === */
+.intro img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  transition: box-shadow 0.5s ease;
+}
+
+.intro img:hover {
+  box-shadow: 0 0 30px 5px rgba(255,255,255,0.8);
+}
+
+/* === Social Icons === */
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #ffffff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons a.tiktok:hover { color: #000; }
+.social-icons a.instagram:hover { color: #e1306c; }
+.social-icons a.twitter:hover { color: #1da1f2; }
+.social-icons a.whatsapp:hover { color: #25d366; }
+
+/* === Responsive Design === */
+@media (max-width: 900px) {
+  nav {
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .intro img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .intro-text h1 {
+    font-size: 28px;
+  }
+
+  .intro-text p {
+    font-size: 15px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+ 
+}
+#Education{
+    display: flex;
+    flex-direction: auto auto;
+    gap: 40px;
+    justify-content: center;
+    height: max-content;
+    margin-top: 20px;
+   
+}
+.uni{
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+#Education div{
+    margin-top: 20px;
+    width: 400px;
+    height: 250px;
+    background-color: #141414;
+    border-radius:30px ;
+    padding: 20px;
+    border: 2px black;
+    transition: background-color 1s;
+    box-shadow: 2px 2px 2px 2px #ffffff,2px 2px 2px 2px #ffffff;
+}
+#Education div:hover{
+    background-color: #ffffff;
+    color: #000101;
+}
+#Skills{
+    display: flex;
+    flex-direction: auto auto auto;
+    justify-content: center;
+    gap: 30px;
+    margin: 80px;
+    height: max-content;
+}
+.skills{
+    background-color: #1c1c1c;
+    width: 280px;
+    height: 300px;
+    padding: 10px;
+    border-radius:30px ;
+    padding-top: 20px;
+    line-height-step: 2px;
+    text-align: center;
+    line-gap-override: 3px;
+    font-family: cursive;
+    font-weight: 100;
+    box-shadow: 1px 1px 1px 1px #ffffff,1px 1px 1px 1px #ffffff inset;
+}
+.para{
+    text-decoration: underline;
+    margin-bottom: 30px;
+    text-align: center;
+}
+@media (max-width: 900px){
+    #Education{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        
+    }
+    #Skills{
+        flex-direction: column-reverse;
+    }
+}
+#work{
+    display: flex;
+    
+}
+.work{
+    margin:40px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 350px;
+}
+@media (max-width: 900px){
+   #work{
+   flex-direction: column-reverse;
+   } 
+}
